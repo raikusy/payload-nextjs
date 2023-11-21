@@ -10,6 +10,9 @@ dotenv.config({
 });
 
 export default buildConfig({
+  admin: {
+    user: "admins",
+  },
   collections: [Pages],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
